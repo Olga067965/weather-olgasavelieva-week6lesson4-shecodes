@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="container">
+      <div class="location">
+        <h1 class="card-city" id="city" id="result">Paris</h1>
+        <form class="form-search-city" id="search-form">
+          <div class="search-city">
+            <input
+              type="search"
+              id="city-input"
+              class="btn-city"
+              name="q"
+              placeholder="Enter city…"
+            />
+            <button class="btn-search" type="submit" value="Submit">Search</button>
+          </div>
+        </form>
+        <button class="location-btn" id="current-location-button">
+          Current
+        </button>
+      </div>
+      <div class="weather">
+        <p class="time" id="info" id="date"></p>
+        <h2 id="description">Sunny</h2>
+      </div>
+      <div class="item">
+        <img src="./images/clear-day.svg" alt="#" width="200" />
+        <span class="temp" id="temperature">17</span>
+        <span class="units">
+          <a href="#" id="convertTemp" class="degrees">°C</a>
+        </span>
+      </div>
+      <ul class="list-item">
+        <li>Humidity: <span id="humidity"></span> %</li>
+        <li>Wind: <span id="wind"></span> km/h</li>
+      </ul>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">MON</h5>
+            <p class="card-text">
+              <img src="./images/clear-day.svg" alt="" />
+            </p>
+            <p class="card-text">17°C</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">TUE</h5>
+            <p class="card-text">
+              <img src="./images/partly-cloudy-day-rain.svg" alt="" />
+            </p>
+            <p class="card-text">15°C</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">WED</h5>
+            <p class="card-text">
+              <img src="./images/partly-cloudy-day-smoke.svg" alt="" />
+            </p>
+            <p class="card-text">16°C</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">THU</h5>
+            <p class="card-text">
+              <img src="./images/thunderstorms-day-rain.svg" alt="" />
+            </p>
+            <p class="card-text">15°C</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">FRI</h5>
+            <p class="card-text">
+              <img src="./images/partly-cloudy-day-fog.svg" alt="" />
+            </p>
+            <p class="card-text">14°C</p>
+          </div>
+        </div>
+      </div>
+      </header>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./src/index.js"></script>
+    </div>
+  </body>
+</html>
